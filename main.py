@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 from pyrogram import Client
 from pyromod import listen
 from os import getenv
-
+from subprocess import Popen
 
 # Loading server credentials
 load_dotenv("credentials.env")
@@ -22,5 +22,5 @@ if __name__ == "__main__":
         plugins = plugins
     )
 
-
+    Popen(["python", "alive.py"])
     app.run()
