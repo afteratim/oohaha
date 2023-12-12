@@ -18,7 +18,8 @@ if PORT is not None and BASE_URL is not None:
     while True:
         try:
             zget(BASE_URL).status_code
-            sleep(600)
+            sleep(300)
+            print('okay')
         except Exception as e:
             logerror(f"alive.py: {e}")
             sleep(2)
