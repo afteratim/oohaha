@@ -2,6 +2,8 @@ from time import sleep
 from requests import get as zget
 # from os import environ
 from logging import error as logerror
+from dotenv import load_dotenv
+from os import getenv
 
 load_dotenv("credentials.env")
 BASE_URL = getenv('BASE_URL', None)
